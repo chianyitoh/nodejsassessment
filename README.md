@@ -93,6 +93,7 @@ This will store the JWT token into a Postman environment variable named **token*
 
 ```javascript
 pm.environment.set("token", pm.response.json().token);
+```
 
 #### Step 2 : Use token in all protected requests
 
