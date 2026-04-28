@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.send('default route')
 })
 
-const port = 5000; // update later
+const port = process.env.PORT || 5000;
 
 const start = async() => {
     try{
