@@ -6,17 +6,8 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGO_URI=mongodb://mongo:27017/nodejsassessment
-      - JWT_SECRET=supersecretkey
-    depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:6
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
+      - MONGO_URI=mongodb://admin:admin123@ac-2zvkavv-shard-00-00.kdmefne.mongodb.net:27017,ac-2zvkavv-shard-00-01.kdmefne.mongodb.net:27017,ac-2zvkavv-shard-00-02.kdmefne.mongodb.net:27017/?ssl=true&replicaSet=atlas-5in8jr-shard-0&authSource=admin&appName=nodejsassessment
+      - JWT_SECRET=testingsecretkey
 
 volumes:
   mongo-data:
