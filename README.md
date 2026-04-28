@@ -108,7 +108,7 @@ Postman will automatically inject the latest token from the login response.
 
 ---
 
-Alternative Method (Manual)
+### Alternative Method (Manual)
 
 If needed, you can manually set the token:
 
