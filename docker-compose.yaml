@@ -6,8 +6,8 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGO_URI=mongodb://admin:admin123@ac-2zvkavv-shard-00-00.kdmefne.mongodb.net:27017,ac-2zvkavv-shard-00-01.kdmefne.mongodb.net:27017,ac-2zvkavv-shard-00-02.kdmefne.mongodb.net:27017/?ssl=true&replicaSet=atlas-5in8jr-shard-0&authSource=admin&appName=nodejsassessment
-      - JWT_SECRET=testingsecretkey
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
 
 volumes:
   mongo-data:
