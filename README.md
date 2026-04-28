@@ -18,7 +18,7 @@ This project is a Node.js REST API that implements user authentication and profi
 1. Clone the repository:
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/chianyitoh/nodejsassessment.git
 cd <project-folder>
 ```
 
